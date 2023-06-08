@@ -1,52 +1,52 @@
 #Необходимые Git команды:
 
-1) ###git clone https://github.com/AllUfaPractice/allufa
+1) git clone https://github.com/AllUfaPractice/allufa
 //Перенести репозиторий на пк
 
-2) ###git checkout -b имя-ветки 
+2) git checkout -b имя-ветки 
 //Создать свою ветку
 
-3) ###git status
+3) git status
 //Проверить что вы находитесь в созданной ветке
 
-4) ###git add . 
+4) git add . 
 Добавить изменения к коммиту
 
-5) ###git commit -m "Ваш комментарий" 
+5) git commit -m "Ваш комментарий" 
 //Добавить комментарий к коммиту
 
-6) ###git push origin имя-ветки 
+6) git push origin имя-ветки 
 //git push - отправить все коммиты
 //origin - удаленный репозиторий
 //имя-ветки - созданная ветка в пункте 2
 
-7) ###зайти на сайт и проверить что изменения отправились
+7) зайти на сайт и проверить что изменения отправились
 https://github.com/AllUfaPractice/allufa/tree/main
 
-8) ###Выбрать свою ветку 
+8) Выбрать свою ветку 
 //По умолчанию стоит main
 
-9) ###Создать pull request на ветку main
+9) Создать pull request на ветку main
 //Нажать на зеленую кнопку Compare & pull request
 
-10) ###Добавить TheSadFreedom в Reviewers
+10) Добавить TheSadFreedom в Reviewers
 //Справа Reviewers
 
-11) ###Нажать кнопку Create pull request
+11) Нажать кнопку Create pull request
 
 #Если появились правки к request'y 
 
-1) ###git checkout имя-ветки
+1) git checkout имя-ветки
 
-2) ###Внести поправки
+2) Внести поправки
 
-3) ###git status (Проверить что вы находитесь в созданной ветке)
+3) git status (Проверить что вы находитесь в созданной ветке)
 
-4) ###git add . (Добавить изменения к коммиту)
+4) git add . (Добавить изменения к коммиту)
 
-5) ###git commit -m "Ваш комментарий" (Добавить комментарий к коммиту)
+5) git commit -m "Ваш комментарий" (Добавить комментарий к коммиту)
 
-6) ###git push origin имя-ветки
+6) git push origin имя-ветки
 
 # Getting Started with Create React App
 
