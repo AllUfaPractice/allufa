@@ -3,6 +3,8 @@ import {
   MainInformationStyle,
   FisrtInformationStyle,
   SecondInformationStyle,
+  ThirdInformationStyle,
+  PartnersStyle
 } from "./Information.styled";
 
 class MainInformation extends React.Component {
@@ -77,6 +79,52 @@ class MainInformation extends React.Component {
             </div>
           </div>
         </SecondInformationStyle>
+
+        <ThirdInformationStyle>
+          <h3>Наш конструктор</h3>
+          <div className="grid">
+            <div className="ThirdInformationCont"></div>
+            <div className="InformationCont">
+              <h4>Заголовок</h4>
+              <p className="IformationText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              </p>
+              <p className="IformationText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              </p>
+              <p className="IformationText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              </p>
+            </div>
+
+            <div className="InformationCont">
+              <h4>Заголовок</h4>
+              <p className="IformationText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              </p>
+              <p className="IformationText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              </p>
+              <p className="IformationText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              </p>
+            </div>
+            <div className="ThirdInformationCont"></div>
+            
+          </div>
+        </ThirdInformationStyle>
+        <PartnersStyle>
+          <div className="cont">
+          <h3>Наши партнеры</h3>
+          <img className="PartnersImg" src="https://sun9-10.userapi.com/impg/0qbDljgSjd2wb5UKpg3ZXOMJFEqJGTAijj4IMQ/eve9K5gDaeU.jpg?size=1219x128&quality=95&sign=a87b95b86efdab08891583fc44bb09cc&type=album"/>
+          </div>
+          </PartnersStyle>
       </MainInformationStyle>
     );
   }
