@@ -237,6 +237,11 @@ export const PartnersStyle = styled.a`
     font-weight: bold;
   }
   .PartnersImg{
-    margin: 0 auto;
-  }
+    width: 100%;
+    height: 230px;
+    background-image: url('https://sun9-10.userapi.com/impg/0qbDljgSjd2wb5UKpg3ZXOMJFEqJGTAijj4IMQ/eve9K5gDaeU.jpg?size=1219x128&quality=95&sign=a87b95b86efdab08891583fc44bb09cc&type=album');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 25px;
+    }
 `;

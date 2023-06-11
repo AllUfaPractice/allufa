@@ -122,7 +122,10 @@ class MainInformation extends React.Component {
         <PartnersStyle>
           <div className="cont">
           <h3>Наши партнеры</h3>
-          <img className="PartnersImg" src="https://sun9-10.userapi.com/impg/0qbDljgSjd2wb5UKpg3ZXOMJFEqJGTAijj4IMQ/eve9K5gDaeU.jpg?size=1219x128&quality=95&sign=a87b95b86efdab08891583fc44bb09cc&type=album"/>
+          <div className="PartnersImg">
+          
+          </div>
+          {/* <img className="PartnersImg" src="https://sun9-10.userapi.com/impg/0qbDljgSjd2wb5UKpg3ZXOMJFEqJGTAijj4IMQ/eve9K5gDaeU.jpg?size=1219x128&quality=95&sign=a87b95b86efdab08891583fc44bb09cc&type=album"/> */}
           </div>
           </PartnersStyle>
       </MainInformationStyle>
