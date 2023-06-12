@@ -60,7 +60,10 @@ export const NavbarStyle = styled.a`
     align-items:center;
     background-color:rgb(0,167,93);
     height:80px;
+    width: 100%;
     justify-items:center;
+    /* position: fixed; */
+    
   svg{
     font-size:35px;
   }
