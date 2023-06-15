@@ -1,26 +1,31 @@
 import React from "react";
-import { MainPageStyle, OneInfoStyle, TwoInfoStyle } from "./MainPages.styled";
+//Styles
+import {
+  MainPageStyle,
+  MainPageFirstSlide,
+  TwoInfoStyle,
+  UTPStyle,
+  TVLiveButtonStyle,
+} from "./MainPages.styled";
+//Components
+import Navbar from "../../Components/Navigation/Navbar/Navbar";
+import TVLiveButton from "../../Components/Buttons/TVLiveButton/TVLiveButton";
 
 const MainPage = () => {
   return (
     <MainPageStyle>
-      <OneInfoStyle>
-        <div className="cont">
-          <div>
-            <h2>Реклама на ВСЮ УФУ</h2>
-            <p className="InfoText">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div>
-            <div className="TV">
-              <a href="https://allufa.ru/TV-online/">
-                <p className="TVText">Прямой эфир</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </OneInfoStyle>
+      <Navbar />
+
+      <MainPageFirstSlide>
+        <UTPStyle>
+          <h2>Реклама на ВСЮ УФУ</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </UTPStyle>
+        <TVLiveButtonStyle>
+          <TVLiveButton className="a123" />
+        </TVLiveButtonStyle>
+      </MainPageFirstSlide>
+
       <TwoInfoStyle>
         <div className="cont">
           <p className="WhyWe">Почему </p>
@@ -33,8 +38,6 @@ const MainPage = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          
-         
         </div>
       </TwoInfoStyle>
     </MainPageStyle>

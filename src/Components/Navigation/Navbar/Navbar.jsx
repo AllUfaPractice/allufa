@@ -1,7 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import { NavbarStyle } from "./Navbar.styled";
-import Logo from "../../Images/ALLUFA_logo_5.png";
-
 
 class Navbar extends React.Component{
   render(){
