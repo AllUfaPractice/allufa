@@ -1,14 +1,23 @@
+//Styles
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
-import MainInformation from './Information/MainInformation/Information';
+//Pages
 import MainPage from './Pages/MainPage/MainPages';
-import Footer from './Components/Navbar/Footer';
+//NPM
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <MainPage/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route
+            path="/src/Pages/MainPage/MainPage"
+            element={<MainPage />}
+          />
+        </Routes>
+      </Router>
+      
       {/* <MainInformation/>
       <Footer/> */}
     </div>
