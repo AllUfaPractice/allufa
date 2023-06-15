@@ -1,89 +1,78 @@
 import styled, { css } from "styled-components";
 
-export const HeaderStyle = styled.a`
+export const NavbarStyle = styled.a`
   * {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    text-decoration: none;
   }
   .cont {
     display: grid;
-    grid-template-columns: 1fr 0.3fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px 0px 0 0px;
+    justify-items: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
   }
   .logo {
-    height: 120px;
-    width: 360px;
+    width: 120px;
+    height: 80px;
+  }
+  .InformationLink {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .NavbarLink {
+    color: rgb(229, 229, 229);
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 31px 0;
+  }
+  .NavbarLink :hover{
+    color: White;
+  }
+  .ProductsContDB{
+    display: none;
+  }
+  .Products:hover .ProductsContDB{
+    display: block;
+  }
+  .ProductsCont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-weight: 600;
+    position: fixed;
+    height: 280px;
+    width: 350px;
+    padding-bottom:20px;
+    background-color: rgba(0, 30, 13, 0.8);
+    border: 1px solid white;
+    border-radius: 0 0  30px 30px;
+  }
+
+  .NavbarLink svg {
+    margin-left: 3px;
   }
   .ico {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
   }
   .ico svg {
-    color: white;
-    font-size: 20px;
-    margin: 0 10px;
-    background-color: rgb(0, 167, 93);
-    padding: 5px;
-    border-radius: 4px;
-  }
-
-  @media screen and (max-width: 620px) {
-    .logo{
-      width: 240px;
-      height:80px;
-    }
-  }
-  @media screen and (max-width: 500px) {
-    .logo{
-      width: 180px;
-      height:60px;
-    }
-    .ico svg {
-    font-size: 15px;
-    margin: 0 5px;
-    background-color: rgb(0, 167, 93);
+    color: black;
+    background-color: white;
+    border: solid gray 0.5px;
     padding: 2px;
-    border-radius: 4px;
-  }
-}
-  
-`;
-export const NavbarStyle = styled.a`
-* {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-    display: grid;
-    grid-template-columns: 0.1fr 1fr 0.1fr;
-    align-items:center;
-    background-color:rgb(0,167,93);
-    height:80px;
-    width: 100%;
-    justify-items:center;
-    /* position: fixed; */
-    
-  svg{
-    font-size:35px;
-  }
-  h1{
-    text-align:center;
-    color:white;
-  }
-  @media screen and (max-width: 620px) {
-  h1{
-    font-size: 25px;
-  } 
-  svg{
-    margin: 0 10px;
-  }
-  }
-  @media screen and (max-width: 500px) {
-  svg{
-    margin: 0 15px;
-  }
+    border-radius: 50%;
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
   }
 `;
-
-
