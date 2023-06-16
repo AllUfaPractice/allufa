@@ -5,7 +5,10 @@ import {
   MainPageFirstSlide,
   TwoInfoStyle,
   UTPStyle,
-  TVLiveButtonStyle,
+  MainPageTVLiveButtonStyle,
+  InfoContFirstStyle,
+  InfoContSecondStyle,
+  ThreeInfoStyleStyle,
 } from "./MainPages.styled";
 //Components
 import Navbar from "../../Components/Navigation/Navbar/Navbar";
@@ -21,25 +24,47 @@ const MainPage = () => {
           <h2>Реклама на ВСЮ УФУ</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </UTPStyle>
-        <TVLiveButtonStyle>
-          <TVLiveButton className="a123" />
-        </TVLiveButtonStyle>
+        <MainPageTVLiveButtonStyle>
+          <TVLiveButton />
+        </MainPageTVLiveButtonStyle>
       </MainPageFirstSlide>
 
       <TwoInfoStyle>
-        <div className="cont">
-          <p className="WhyWe">Почему </p>
-          <div className="WhyWeCont">
-            <div className="NumCont">
-              <p className="Num">1</p>
-            </div>
-            <p className="Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
+        <p>Почему </p>
+        <InfoContFirstStyle>
+          <p className="num">1</p>
+          <p className="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </InfoContFirstStyle>
+
+        <InfoContSecondStyle>
+          <p className="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p className="num">2</p>
+          
+        </InfoContSecondStyle>
+        <p>Нас </p>
+
+        <p>Выбирают </p>
+        <InfoContFirstStyle>
+          <p className="num">3</p>
+          <p className="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </InfoContFirstStyle>
       </TwoInfoStyle>
+
+      <ThreeInfoStyleStyle>
+        
+      </ThreeInfoStyleStyle>
+
+
+      <div className="qweewq">sdf</div>
     </MainPageStyle>
   );
 };
