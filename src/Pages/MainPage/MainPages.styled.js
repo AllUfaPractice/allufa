@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
-export const MainPageStyle = styled.a`
+export const MainPageStyle = styled.div`
   * {
     margin: 0;
     padding: 0;
     color: white;
+    font-weight: 600;
+  }
+  .qweewq {
+    padding: 500px;
   }
 `;
 
-export const MainPageFirstSlide = styled.a`
+export const MainPageFirstSlide = styled.div`
   * {
     margin: 0;
     padding: 0;
@@ -21,17 +25,16 @@ export const MainPageFirstSlide = styled.a`
   background-size: 100%;
   width: 100%;
   height: 1080px;
-  
 `;
 
-export const TVLiveButtonStyle = styled.a`
+export const MainPageTVLiveButtonStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 200px;
 `;
 
-export const UTPStyle = styled.a`
+export const UTPStyle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,42 +56,82 @@ export const UTPStyle = styled.a`
   }
 `;
 
-export const TwoInfoStyle = styled.a`
-  * {
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-weight: 600;
-  }
-  .cont {
-    display: grid;
-    grid-template-columns: 0.6fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    background-color: rgb(27, 85, 52);
-    padding: 70px 0;
-  }
-  .WhyWe {
-    font-size: 56px;
+
+export const TwoInfoStyle = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgb(27, 85, 52);
+  padding: 70px 0;
+  align-items: center;
+
+  p {
+    font-size: 60px;
     text-align: center;
   }
-  .WhyWeCont {
-    display: flex;
-    background-color: white;
-    align-items: center;
-    border-radius: 20px 0 0 20px;
-  }
-  .NumCont {
+`;
+export const InfoContFirstStyle = styled.div`
+  display: flex;
+  background-color: white;
+  border-radius: 30px 0 0 30px;
+  height: 150px;
+  justify-items: center;
+  align-items: center;
+  margin: 40px 0;
+  font-family: sans-serif;
+
+  .num {
+    font-size: 60px;
+    text-align: center;
     background-color: rgb(0, 30, 13);
-    border-radius: 15px;
-    width: 50px;
-    height: 50px;
-  }
-  .Num {
+    padding: 5px 15px;
+    width: 60px;
+    border-radius: 12px;
+    margin: 0 30px;
     color: white;
-    font-size: 20px;
-    margin: 18px;
   }
-  .Text {
+  .text {
+    font-size: 24px;
+    font-family: Raleway;
     color: black;
+    text-align: start;
   }
 `;
+export const InfoContSecondStyle = styled.div`
+  display: flex;
+  background-color: white;
+  border-radius: 0 30px 30px 0;
+  height: 150px;
+  justify-items: center;
+  align-items: center;
+  margin: 40px 0;
+  font-family: sans-serif;
+
+  .num {
+    font-size: 60px;
+    text-align: center;
+    background-color: rgb(0, 30, 13);
+    padding: 5px 15px;
+    width: 60px;
+    border-radius: 12px;
+    margin: 0 30px;
+    color: white;
+  }
+  .text {
+    font-size: 24px;
+    font-family: Raleway;
+    color: black;
+    text-align: end;
+  }
+`;
+
+
+export const ThreeInfoStyleStyle = styled.div`
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(0,30,13);
+`;
+
+

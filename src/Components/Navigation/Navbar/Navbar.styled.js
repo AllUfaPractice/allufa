@@ -67,7 +67,6 @@ export const NavbarStyle = styled.a`
   }
   .ico svg {
     color: black;
-    background-color: white;
     border: solid gray 0.5px;
     padding: 2px;
     border-radius: 50%;
