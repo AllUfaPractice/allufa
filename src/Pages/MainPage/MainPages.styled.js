@@ -7,11 +7,15 @@ export const MainPageStyle = styled.div`
     color: white;
     font-weight: 600;
   }
-  .qweewq {
-    padding: 500px;
+  .asd{
+    height: 400px;
+    background-color: blue;
   }
 `;
-
+export const TitleStyle = styled.p`
+  font-size: 60px;
+  text-align: center;
+`;
 export const MainPageFirstSlide = styled.div`
   * {
     margin: 0;
@@ -56,7 +60,6 @@ export const UTPStyle = styled.div`
   }
 `;
 
-
 export const TwoInfoStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -64,11 +67,6 @@ export const TwoInfoStyle = styled.div`
   background-color: rgb(27, 85, 52);
   padding: 70px 0;
   align-items: center;
-
-  p {
-    font-size: 60px;
-    text-align: center;
-  }
 `;
 export const InfoContFirstStyle = styled.div`
   display: flex;
@@ -125,13 +123,26 @@ export const InfoContSecondStyle = styled.div`
   }
 `;
 
-
-export const ThreeInfoStyleStyle = styled.div`
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
+export const ThreeInfoStyle = styled.div`
+  display: grid;
+  align-items: center;
+  justify-items: center;
   width: 100%;
   height: 1000px;
-  background-color: rgb(0,30,13);
+  background-color: rgb(0, 30, 13);
+`;
+export const ThreeInfoTextStyle = styled.div`
+  display: grid;
+  grid-template-rows: 0.1fr 1fr;
+  height: 700px;
+  justify-items: center;
 `;
 
-
+export const PartnersStyle = styled.div`
+  overflow: hidden;
+  border: black solid 3px;
+  max-width: 60%;
+  
+  margin: 300px;
+  background-color: rgb(27, 85, 52);
+`;
