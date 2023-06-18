@@ -1,6 +1,7 @@
 import React from "react";
 //Styles
 import {
+  TitleStyle,
   MainPageStyle,
   MainPageFirstSlide,
   TwoInfoStyle,
@@ -8,11 +9,16 @@ import {
   MainPageTVLiveButtonStyle,
   InfoContFirstStyle,
   InfoContSecondStyle,
-  ThreeInfoStyleStyle,
+  ThreeInfoStyle,
+  ThreeInfoTextStyle,
+  PartnersStyle,
 } from "./MainPages.styled";
 //Components
 import Navbar from "../../Components/Navigation/Navbar/Navbar";
 import TVLiveButton from "../../Components/Buttons/TVLiveButton/TVLiveButton";
+import MainCarousel from "../../Components/Carousel/MainCarousel";
+import Partners from "../../Components/Ticker/TickerParners";
+import { Title } from "@mui/icons-material";
 
 const MainPage = () => {
   return (
@@ -24,13 +30,14 @@ const MainPage = () => {
           <h2>Реклама на ВСЮ УФУ</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </UTPStyle>
+
         <MainPageTVLiveButtonStyle>
           <TVLiveButton />
         </MainPageTVLiveButtonStyle>
       </MainPageFirstSlide>
 
       <TwoInfoStyle>
-        <p>Почему </p>
+        <TitleStyle>Почему</TitleStyle>
         <InfoContFirstStyle>
           <p className="num">1</p>
           <p className="text">
@@ -45,11 +52,10 @@ const MainPage = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <p className="num">2</p>
-          
         </InfoContSecondStyle>
-        <p>Нас </p>
+        <TitleStyle>Нас</TitleStyle>
 
-        <p>Выбирают </p>
+        <TitleStyle>Нас выбирают</TitleStyle>
         <InfoContFirstStyle>
           <p className="num">3</p>
           <p className="text">
@@ -59,12 +65,17 @@ const MainPage = () => {
         </InfoContFirstStyle>
       </TwoInfoStyle>
 
-      <ThreeInfoStyleStyle>
-        
-      </ThreeInfoStyleStyle>
-
-
-      <div className="qweewq">sdf</div>
+      <ThreeInfoStyle>
+        <ThreeInfoTextStyle>
+          <TitleStyle>Кратко о наших предложениях</TitleStyle>
+          <MainCarousel></MainCarousel>
+        </ThreeInfoTextStyle>
+      </ThreeInfoStyle>
+      <PartnersStyle>
+        <Partners></Partners>
+      </PartnersStyle>
+      <div className="asd"></div>
+      
     </MainPageStyle>
   );
 };
