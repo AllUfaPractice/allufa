@@ -1,3 +1,9 @@
-body{
-    background-color: #1B5534;
+body {
+  background-color: #1F392A;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
 }

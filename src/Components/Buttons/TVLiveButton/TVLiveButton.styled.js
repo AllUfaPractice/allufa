@@ -27,5 +27,6 @@ export const TVLiveButtonStyle = styled.a`
       rgb(27, 85, 52),
       rgb(0, 30, 13)
     );
+    z-index: 0;
 }
 `;

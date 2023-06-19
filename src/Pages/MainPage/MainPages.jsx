@@ -14,7 +14,6 @@ import {
   PartnersStyle,
 } from "./MainPages.styled";
 //Components
-import Navbar from "../../Components/Navigation/Navbar/Navbar";
 import TVLiveButton from "../../Components/Buttons/TVLiveButton/TVLiveButton";
 import MainCarousel from "../../Components/Carousel/MainCarousel";
 import Partners from "../../Components/Ticker/TickerParners";
@@ -23,13 +22,15 @@ import { Title } from "@mui/icons-material";
 const MainPage = () => {
   return (
     <MainPageStyle>
-      <Navbar />
-
       <MainPageFirstSlide>
         <UTPStyle>
           <h2>Реклама на ВСЮ УФУ</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </UTPStyle>
+        <TVLiveButtonStyle>
+          <TVLiveButton />
+        </TVLiveButtonStyle>
+      </MainPageFirstSlide>
 
         <MainPageTVLiveButtonStyle>
           <TVLiveButton />
