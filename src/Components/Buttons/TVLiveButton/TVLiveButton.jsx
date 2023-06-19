@@ -1,10 +1,17 @@
 import React from "react";
 import { TVLiveButtonStyle } from "./TVLiveButton.styled";
 import { Button } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 
 const TVLiveButton = () => {
+  const isLargeDesktop = useMediaQuery((theme) => theme.breakpoints.up("xl"));
+  const isDesktop = useMediaQuery((theme) => theme.breakpoints.between("lg", "xl"));
+  const isNotebook = useMediaQuery((theme) => theme.breakpoints.between("md", "lg"));
+  const isTablet = useMediaQuery((theme) => theme.breakpoints.between("sm", "md"));
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+
   return (
-    <TVLiveButtonStyle>
+    <TVLiveButtonStyle largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
       <Button
         className="TVButton"
         color="primary"

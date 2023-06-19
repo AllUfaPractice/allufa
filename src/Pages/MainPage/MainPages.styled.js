@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MainPageStyle = styled.a`
+export const MainPageStyle = styled.div`
   * {
     margin: 0;
     padding: 0;
