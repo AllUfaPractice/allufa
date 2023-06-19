@@ -30,7 +30,6 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </Link>
       </NavbarLogoStyle>
-
       <NavbarLinks largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
         <Button><Link to="/">Наш сайт</Link></Button>
         <ModalButton/>  

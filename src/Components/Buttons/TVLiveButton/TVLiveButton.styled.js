@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const TVLiveButtonStyle = styled.a`
   .TVButton {
+    
     width: 200px;
     height: 50px;
     background-color: rgba(0, 30, 13, 0.7);

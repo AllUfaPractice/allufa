@@ -232,7 +232,6 @@ export const NavbarSocialLinks = styled.a`
 
         color: white;
         font-size: 20px;
-
         width: 30px;
         height: 30px;
         margin-left: 10px;
