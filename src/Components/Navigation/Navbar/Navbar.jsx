@@ -10,10 +10,12 @@ import {
 import logo from "../../../Images/WhiteLogo.png";
 //NPM
 import { Link } from "react-router-dom";
-import ModalButton from "../Dropdown/Dropdown";
 import { Button } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 import { FaWhatsapp, FaVk, FaTelegramPlane, FaYoutube } from 'react-icons/fa';
+//Components
+import ModalButton from "../Dropdown/Dropdown";
+import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 
 const Navbar = () => {
   const isLargeDesktop = useMediaQuery((theme) => theme.breakpoints.up("xl"));
@@ -24,7 +26,7 @@ const Navbar = () => {
 
   return (
     <NavbarStyle largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
-      
+      <HamburgerMenu/>
       <NavbarLogoStyle largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
         <Link to="/">
           <img src={logo} alt="logo" />

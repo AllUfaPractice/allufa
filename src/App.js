@@ -30,10 +30,6 @@ function App() {
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route
-              path="/src/Pages/MainPage/MainPage.jsx"
-              element={<MainPage />}
-            />
-            <Route
               path="/src/Pages/BabyBoomPage/BabyBoomPage.jsx"
               element={<BabyBoomPage />}
             />
