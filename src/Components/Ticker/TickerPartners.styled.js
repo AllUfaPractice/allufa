@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const TickerStyle = styled.div`
 
   display: flex;
@@ -8,10 +9,10 @@ export const TickerStyle = styled.div`
   justify-content: space-around;
 
   .ImgCont{
+    display: flex;
+    align-items: center;
     padding: 0 50px;
-  }
-  p{
-
+    white-space: nowrap;
   }
   @keyframes ticker {
     0% {
@@ -24,18 +25,24 @@ export const TickerStyle = styled.div`
 
   img{
     margin: 30px;
+    display: block;
+    margin: 0;
+    padding: 20px 20px;
+    margin: 0 40px;
   }
   .ArtImg {
-    height: 120px;
-    width: 120px;
+    /* height: 140px;
+    width: 140px; */
+    width: 15%;
   }
   .BashImg {
-    height: 140px;
-    width: 140px;
-
+    /* height: 180px;
+    width: 180px; */
+    width: 200%;
   }
   .RosKIMg {
-    height: 80px;
-    width: 300px;
+    /* height: 80px;
+    width: 300px; */
+    width: 50%;
   }
-`;
+ `;

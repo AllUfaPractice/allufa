@@ -8,6 +8,7 @@ import MainPage from "./Pages/MainPage/MainPages";
 import BabyBoomPage from "./Pages/BabyBoomPage/BabyBoomPage";
 //Components
 import Navbar from "./Components/Navigation/Navbar/Navbar";
+import Footer from "./Components/Navigation/Footer/Footer"
 
 const theme = createTheme({
   breakpoints: {
@@ -38,6 +39,7 @@ function App() {
               element={<BabyBoomPage />}
             />
           </Routes>
+          <Footer/>
         </Router>
       </ThemeProvider>
     </div>
