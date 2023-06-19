@@ -11,22 +11,37 @@ import {
   InfoContSecondStyle,
   ThreeInfoStyle,
   ThreeInfoTextStyle,
+  FourInfoTextStyle,
   PartnersStyle,
 } from "./MainPages.styled";
 //Components
 import TVLiveButton from "../../Components/Buttons/TVLiveButton/TVLiveButton";
 import MainCarousel from "../../Components/Carousel/MainCarousel";
-import Partners from "../../Components/Ticker/TickerParners";
+import Partners from "../../Components/Ticker/TickerPartners";
+//NPM
+import { useMediaQuery } from "@mui/material";
 
 const MainPage = () => {
+  const isLargeDesktop = useMediaQuery((theme) => theme.breakpoints.up("xl"));
+  const isDesktop = useMediaQuery((theme) =>
+    theme.breakpoints.between("lg", "xl")
+  );
+  const isNotebook = useMediaQuery((theme) =>
+    theme.breakpoints.between("md", "lg")
+  );
+  const isTablet = useMediaQuery((theme) =>
+    theme.breakpoints.between("sm", "md")
+  );
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   return (
+    // LargeDesktop={isLargeDesktop} Desktop={isDesktop} Notebook={isNotebook} Tablet={isTablet} Mobile={isMobile}
     <MainPageStyle>
-      <MainPageFirstSlide>
+      <MainPageFirstSlide LargeDesktop={isLargeDesktop} Desktop={isDesktop} Notebook={isNotebook} Tablet={isTablet} Mobile={isMobile}>
         <UTPStyle>
           <h2>Реклама на ВСЮ УФУ</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </UTPStyle>
-        <MainPageTVLiveButtonStyle>
+        <MainPageTVLiveButtonStyle LargeDesktop={isLargeDesktop} Desktop={isDesktop} Notebook={isNotebook} Tablet={isTablet} Mobile={isMobile}>
           <TVLiveButton />
         </MainPageTVLiveButtonStyle>
       </MainPageFirstSlide>
@@ -66,11 +81,12 @@ const MainPage = () => {
           <MainCarousel></MainCarousel>
         </ThreeInfoTextStyle>
       </ThreeInfoStyle>
-      <PartnersStyle>
-        <Partners></Partners>
-      </PartnersStyle>
-      <div className="asd"></div>
-      
+      <FourInfoTextStyle>
+        <TitleStyle>Наши партнеры</TitleStyle>
+        <PartnersStyle>
+          <Partners></Partners>
+        </PartnersStyle>
+      </FourInfoTextStyle>
     </MainPageStyle>
   );
 };

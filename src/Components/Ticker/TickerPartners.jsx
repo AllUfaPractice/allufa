@@ -1,5 +1,5 @@
 import React from "react";
-import { TickerStyle } from "./TickerParners.styled";
+import { TickerStyle } from "./TickerPartners.styled";
 
 class Partners extends React.Component {
   render() {
@@ -19,9 +19,10 @@ class Partners extends React.Component {
             src="https://s3-alpha-sig.figma.com/img/6861/7e82/0a476a6bccc22c60f19d45ec5ef1da23?Expires=1687737600&Signature=ELXySZ5Jlkc6aWtsDDETXnMWdYgjfnTs-0bMLueU38KPDCZkHhySxi6q2xRiQJcH9BuaeGtyYNRDmdQnPkovMQPx41xeL3dK7hqSBNnFuuRipRdgvst639IS~i7R1Oia4FDpTj8H5XW7pQuxCX3DAZUqd9SRzyzqXhWV-ONjhoFbkp04um9auI678GDl1HXlWAz6fSkeLkT8wc~7aJIsSAT68PzJ0~BTqsRTcR-TquPuzuKMT2tGAEXrhdqv50kc6HPInqAzxur1EbE5Uywmolqi4u9qgp56N95eX3tw19iMqhGW1m6pII3YgZVoIvtydyUkHRkFfHQoDsN3sEM1Eg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
           />
         </div>
+        
+        
       </TickerStyle>
     );
   }
 }
-
 export default Partners;

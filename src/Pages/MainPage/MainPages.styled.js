@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { css } from "styled-components";
 
 export const MainPageStyle = styled.div`
   * {
@@ -7,14 +8,16 @@ export const MainPageStyle = styled.div`
     color: white;
     font-weight: 600;
   }
-  .asd{
-    height: 400px;
-    background-color: blue;
-  }
 `;
 export const TitleStyle = styled.p`
   font-size: 60px;
   text-align: center;
+
+  ${(props) => props.LargeDesktop && css``}
+  ${(props) => props.Desktop && css``}
+  ${(props) => props.Notebook && css``}
+  ${(props) => props.Tablet && css``}
+  ${(props) => props.Mobile && css``}
 `;
 export const MainPageFirstSlide = styled.div`
   * {
@@ -29,6 +32,12 @@ export const MainPageFirstSlide = styled.div`
   background-size: 100%;
   width: 100%;
   height: 1080px;
+
+  ${(props) => props.LargeDesktop && css``}
+  ${(props) => props.Desktop && css``}
+  ${(props) => props.Notebook && css``}
+  ${(props) => props.Tablet && css``}
+  ${(props) => props.Mobile && css``}
 `;
 
 export const MainPageTVLiveButtonStyle = styled.div`
@@ -36,6 +45,16 @@ export const MainPageTVLiveButtonStyle = styled.div`
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 200px;
+
+  ${(props) => props.LargeDesktop && css``}
+  ${(props) => props.Desktop && css``}
+  ${(props) => props.Notebook && css``}
+  ${(props) => props.Tablet && css``}
+  ${(props) =>
+    props.Mobile &&
+    css`
+      color: red;
+    `}
 `;
 
 export const UTPStyle = styled.div`
@@ -58,6 +77,16 @@ export const UTPStyle = styled.div`
     font-weight: 400;
     font-size: 24px;
   }
+
+  ${(props) => props.LargeDesktop && css``}
+  ${(props) => props.Desktop && css``}
+  ${(props) => props.Notebook && css``}
+  ${(props) => props.Tablet && css``}
+  ${(props) =>
+    props.Mobile &&
+    css`
+      color: red;
+    `}
 `;
 
 export const TwoInfoStyle = styled.div`
@@ -67,6 +96,12 @@ export const TwoInfoStyle = styled.div`
   background-color: rgb(27, 85, 52);
   padding: 70px 0;
   align-items: center;
+
+  ${(props) => props.LargeDesktop && css``}
+  ${(props) => props.Desktop && css``}
+  ${(props) => props.Notebook && css``}
+  ${(props) => props.Tablet && css``}
+  ${(props) => props.Mobile && css``}
 `;
 export const InfoContFirstStyle = styled.div`
   display: flex;
@@ -94,6 +129,11 @@ export const InfoContFirstStyle = styled.div`
     color: black;
     text-align: start;
   }
+  ${(props) => props.LargeDesktop && css``}
+  ${(props) => props.Desktop && css``}
+  ${(props) => props.Notebook && css``}
+  ${(props) => props.Tablet && css``}
+  ${(props) => props.Mobile && css``}
 `;
 export const InfoContSecondStyle = styled.div`
   display: flex;
@@ -121,6 +161,12 @@ export const InfoContSecondStyle = styled.div`
     color: black;
     text-align: end;
   }
+
+  ${(props) => props.LargeDesktop && css``}
+  ${(props) => props.Desktop && css``}
+  ${(props) => props.Notebook && css``}
+  ${(props) => props.Tablet && css``}
+  ${(props) => props.Mobile && css``}
 `;
 
 export const ThreeInfoStyle = styled.div`
@@ -130,19 +176,52 @@ export const ThreeInfoStyle = styled.div`
   width: 100%;
   height: 1000px;
   background-color: rgb(0, 30, 13);
+
+  ${(props) => props.LargeDesktop && css``}
+  ${(props) => props.Desktop && css``}
+  ${(props) => props.Notebook && css``}
+  ${(props) => props.Tablet && css``}
+  ${(props) => props.Mobile && css``}
 `;
 export const ThreeInfoTextStyle = styled.div`
-  display: grid;
+  /* display: grid; */
+  display: none;
   grid-template-rows: 0.1fr 1fr;
   height: 700px;
   justify-items: center;
+
+  ${(props) => props.LargeDesktop && css``}
+  ${(props) => props.Desktop && css``}
+  ${(props) => props.Notebook && css``}
+  ${(props) => props.Tablet && css``}
+  ${(props) => props.Mobile && css``}
+`;
+
+export const FourInfoTextStyle = styled.div`
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  height: 800px;
+  background-color: rgb(27, 85, 52);
+  align-items: center;
+  justify-content: center;
+
+  p {
+    text-align: start;
+  }
+
+  ${(props) => props.LargeDesktop && css``}
+  ${(props) => props.Desktop && css``}
+  ${(props) => props.Notebook && css``}
+  ${(props) => props.Tablet && css``}
+  ${(props) => props.Mobile && css``}
 `;
 
 export const PartnersStyle = styled.div`
   overflow: hidden;
-  border: black solid 3px;
-  max-width: 60%;
-  
-  margin: 300px;
-  background-color: rgb(27, 85, 52);
+
+  ${(props) => props.LargeDesktop && css``}
+  ${(props) => props.Desktop && css``}
+  ${(props) => props.Notebook && css``}
+  ${(props) => props.Tablet && css``}
+  ${(props) => props.Mobile && css``}
 `;
