@@ -8,6 +8,7 @@ export const NavbarStyle = styled.nav`
   align-items: center;
   text-align: center;
   z-index: 1;
+  border: 1px solid black;
   ${(props) =>
     props.largedesktop &&
     css`
@@ -38,8 +39,20 @@ export const NavbarStyle = styled.nav`
       backdrop-filter: blur(10px);
       background-color: rgb(31, 57, 42, 0.7);
     `}
-  ${(props) => props.tablet && css``}
-  ${(props) => props.mobile && css``}
+  ${(props) =>
+    props.tablet &&
+    css`
+      width: 100%;
+      backdrop-filter: blur(10px);
+      background-color: rgb(31, 57, 42, 0.7);
+    `}
+  ${(props) =>
+    props.mobile &&
+    css`
+      width: 100%;
+      backdrop-filter: blur(10px);
+      background-color: rgb(31, 57, 42, 0.7);
+    `}
 `;
 
 export const NavbarLogoStyle = styled.div`
