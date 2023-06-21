@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { css } from "styled-components";
 
 export const FooterStyle = styled.div`
   width: 100%;
@@ -10,5 +9,3 @@ export const FooterStyle = styled.div`
   ${(props) => props.tablet && css``}
   ${(props) => props.mobile && css``}
 `;
-
-
