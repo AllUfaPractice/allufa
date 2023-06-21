@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.div`
-  * {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
+  width: 100%;
+  height: 15%;
+  ${(props) => props.largedesktop && css``}
+  ${(props) => props.desktop && css``}
+  ${(props) => props.notebook && css``}
+  ${(props) => props.tablet && css``}
+  ${(props) => props.mobile && css``}
 `;
