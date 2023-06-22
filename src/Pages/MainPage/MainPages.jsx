@@ -36,19 +36,56 @@ const MainPage = () => {
   return (
     // LargeDesktop={isLargeDesktop} Desktop={isDesktop} Notebook={isNotebook} Tablet={isTablet} Mobile={isMobile}
     <MainPageStyle>
-      <MainPageFirstSlide LargeDesktop={isLargeDesktop} Desktop={isDesktop} Notebook={isNotebook} Tablet={isTablet} Mobile={isMobile}>
-        <UTPStyle>
+      <MainPageFirstSlide
+        LargeDesktop={isLargeDesktop}
+        Desktop={isDesktop}
+        Notebook={isNotebook}
+        Tablet={isTablet}
+        Mobile={isMobile}
+      >
+        <UTPStyle
+          LargeDesktop={isLargeDesktop}
+          Desktop={isDesktop}
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
           <h2>Реклама на ВСЮ УФУ</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </UTPStyle>
-        <MainPageTVLiveButtonStyle LargeDesktop={isLargeDesktop} Desktop={isDesktop} Notebook={isNotebook} Tablet={isTablet} Mobile={isMobile}>
+        <MainPageTVLiveButtonStyle
+          LargeDesktop={isLargeDesktop}
+          Desktop={isDesktop}
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
           <TVLiveButton />
         </MainPageTVLiveButtonStyle>
       </MainPageFirstSlide>
 
-      <TwoInfoStyle>
-        <TitleStyle>Почему</TitleStyle>
-        <InfoContFirstStyle>
+      <TwoInfoStyle Mobile={isMobile}>
+      <p
+          className="TitlePhone"
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
+          Почему нас выбирают
+        </p>
+        <p
+          className="Title"
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
+          Почему
+        </p>
+        <InfoContFirstStyle
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
           <p className="num">1</p>
           <p className="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -56,17 +93,38 @@ const MainPage = () => {
           </p>
         </InfoContFirstStyle>
 
-        <InfoContSecondStyle>
+        <InfoContSecondStyle
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
           <p className="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <p className="num">2</p>
         </InfoContSecondStyle>
-        <TitleStyle>Нас</TitleStyle>
-
-        <TitleStyle>Нас выбирают</TitleStyle>
-        <InfoContFirstStyle>
+        <p
+          className="Title"
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
+          Нас
+        </p>
+        <p
+          className="Title"
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
+          Выбирают
+        </p>
+        <InfoContFirstStyle
+          Notebook={isNotebook}
+          Tablet={isTablet}
+          Mobile={isMobile}
+        >
           <p className="num">3</p>
           <p className="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -75,14 +133,15 @@ const MainPage = () => {
         </InfoContFirstStyle>
       </TwoInfoStyle>
 
-      <ThreeInfoStyle>
-        <ThreeInfoTextStyle>
-          <TitleStyle>Кратко о наших предложениях</TitleStyle>
+      <ThreeInfoStyle Desktop={isDesktop} Notebook={isNotebook} Tablet={isTablet} Mobile={isMobile}>
+        <ThreeInfoTextStyle Desktop={isDesktop} Notebook={isNotebook} Tablet={isTablet} Mobile={isMobile}>
+          <TitleStyle Tablet={isTablet} Mobile={isMobile}>Кратко о наших предложениях</TitleStyle>
           <MainCarousel></MainCarousel>
         </ThreeInfoTextStyle>
       </ThreeInfoStyle>
-      <FourInfoTextStyle>
-        <TitleStyle>Наши партнеры</TitleStyle>
+
+      <FourInfoTextStyle Tablet={isTablet} Mobile={isMobile}>
+        <TitleStyle Tablet={isTablet} Mobile={isMobile}>Наши партнеры</TitleStyle>
         <PartnersStyle>
           <Partners></Partners>
         </PartnersStyle>

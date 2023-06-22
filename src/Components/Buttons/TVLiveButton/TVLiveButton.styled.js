@@ -1,8 +1,8 @@
 import styled from "styled-components";
+import { css } from "styled-components";
 
 export const TVLiveButtonStyle = styled.a`
   .TVButton {
-    
     width: 200px;
     height: 50px;
     background-color: rgba(0, 30, 13, 0.7);
@@ -28,5 +28,29 @@ export const TVLiveButtonStyle = styled.a`
       rgb(0, 30, 13)
     );
     z-index: 0;
-}
+
+    /* Notebook 1280*/
+    ${(props) =>
+      props.Notebook &&
+      css`
+        width: 175px;
+        height: 45px;
+      `}
+    /* Tablet 960*/
+    ${(props) =>
+      props.Tablet &&
+      css`
+        width: 150px;
+        height: 45px;
+        font-size: 12px;
+      `}
+    /* Mobile 600*/
+    ${(props) =>
+      props.Mobile &&
+      css`
+        width: 115px;
+        height: 30px;
+        font-size: 9px;
+      `}
+  }
 `;
