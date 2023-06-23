@@ -11,7 +11,7 @@ const TVLiveButton = () => {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
   return (
-    <TVLiveButtonStyle largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
+    <TVLiveButtonStyle LargeDesktop={isLargeDesktop} Desktop={isDesktop} Notebook={isNotebook} Tablet={isTablet} Mobile={isMobile}>
       <Button
         className="TVButton"
         color="primary"

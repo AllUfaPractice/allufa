@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { css } from "styled-components";
 
 export const ContStyle = styled.div`
   * {
@@ -8,14 +9,14 @@ export const ContStyle = styled.div`
   width: 100%;
   max-width: 1600px;
   height: 600px;
-  /* border: 3px solid black; */
   margin: 0 auto;
   background-color: white;
 
   p {
     background-color: black;
   }
-  .asd{
+  .asd {
     background-color: black;
   }
+
 `;
