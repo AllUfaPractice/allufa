@@ -15,10 +15,10 @@ const FooterFirstFloor = () => {
         {/* WhatsApp */}
         <Button>
             <FooterFirstFloorStyleSocial>
-                <FooterFirstFloorStyleSocialLogo>
+                <FooterFirstFloorStyleSocialLogo largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
                     <FaWhatsapp/>
                 </FooterFirstFloorStyleSocialLogo>
-                <FooterFirstFloorStyleSocialTitle>
+                <FooterFirstFloorStyleSocialTitle largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
                     WhatsApp
                 </FooterFirstFloorStyleSocialTitle>
             </FooterFirstFloorStyleSocial>
@@ -27,10 +27,10 @@ const FooterFirstFloor = () => {
         {/* VK */}
         <Button href="https://vk.com/allufa_ru">
             <FooterFirstFloorStyleSocial>
-                <FooterFirstFloorStyleSocialLogo>
+                <FooterFirstFloorStyleSocialLogo largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
                     <FaVk/>
                 </FooterFirstFloorStyleSocialLogo>
-                <FooterFirstFloorStyleSocialTitle>
+                <FooterFirstFloorStyleSocialTitle largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
                     ВКонтакте
                 </FooterFirstFloorStyleSocialTitle>
             </FooterFirstFloorStyleSocial>
@@ -39,10 +39,10 @@ const FooterFirstFloor = () => {
         {/* Telegram */}
         <Button>
             <FooterFirstFloorStyleSocial>
-                <FooterFirstFloorStyleSocialLogo>
+                <FooterFirstFloorStyleSocialLogo largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
                     <FaTelegramPlane/>
                 </FooterFirstFloorStyleSocialLogo>
-                <FooterFirstFloorStyleSocialTitle>
+                <FooterFirstFloorStyleSocialTitle largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
                     Telegram
                 </FooterFirstFloorStyleSocialTitle>
             </FooterFirstFloorStyleSocial>
@@ -51,10 +51,10 @@ const FooterFirstFloor = () => {
         {/* YouTube  */}
         <Button href="https://www.youtube.com/channel/UCJDJaiMm9F_7wwmUc4JhJUQ">
             <FooterFirstFloorStyleSocial>
-                <FooterFirstFloorStyleSocialLogo>
+                <FooterFirstFloorStyleSocialLogo largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
                     <FaYoutube/>
                 </FooterFirstFloorStyleSocialLogo>
-                <FooterFirstFloorStyleSocialTitle>
+                <FooterFirstFloorStyleSocialTitle largedesktop={isLargeDesktop} desktop={isDesktop} notebook={isNotebook} tablet={isTablet} mobile={isMobile}>
                     YouTube
                 </FooterFirstFloorStyleSocialTitle>
             </FooterFirstFloorStyleSocial>
