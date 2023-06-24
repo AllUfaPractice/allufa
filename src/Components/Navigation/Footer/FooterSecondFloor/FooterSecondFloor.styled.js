@@ -102,7 +102,7 @@ export const FooterSecondFloorMenuLinks = styled.div`
       a {
         text-decoration: none;
         color: white;
-        font-size: 24px;
+        font-size: 20px;
         padding: 7px;
         text-align: left;
       }
