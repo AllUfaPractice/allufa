@@ -6,6 +6,7 @@ import { ThemeProvider, createTheme } from "@mui/material";
 //Pages
 import MainPage from "./Pages/MainPage/MainPages";
 import BabyBoomPage from "./Pages/BabyBoomPage/BabyBoomPage";
+import CapitalPage from "./Pages/Capital/CapitalPage";
 //Components
 import Navbar from "./Components/Navigation/Navbar/Navbar";
 import Footer from "./Components/Navigation/Footer/Footer";
