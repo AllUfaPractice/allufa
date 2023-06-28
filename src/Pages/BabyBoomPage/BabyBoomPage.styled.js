@@ -117,6 +117,7 @@ export const InfoStyle = styled.div`
     background-color: white;
     width: 90%;
     padding: 5% 25% 0 10%;
+    border-radius: 0 0 50px 0;
   }
   .text {
     font-size: 35px;
@@ -828,3 +829,5 @@ export const CommunicationStyle = styled.div`
       }
     `}
 `;
+
+
