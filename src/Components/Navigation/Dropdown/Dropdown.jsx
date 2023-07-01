@@ -70,7 +70,7 @@ const ModalButton = () => {
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
+                <Link to="/src/Pages/Capital/CapitalPage.jsx">
                   Столица
                 </Link>
               </DropdownStyleLink>

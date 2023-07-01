@@ -36,6 +36,7 @@ function App() {
               path="/src/Pages/BabyBoomPage/BabyBoomPage.jsx"
               element={<BabyBoomPage />}
             />
+            <Route path="/src/Pages/Capital/CapitalPage.jsx" element={<CapitalPage/>}/>
           </Routes>
           <Footer/>
         </Router>
