@@ -1,20 +1,6 @@
 import styled from "styled-components";
 import { css } from "styled-components";
 
-// /* LDesktop */
-// ${(props) => props.LargeDesktop && css`
-// `}
-// /* Decktop 1920 */
-// ${(props) => props.Desktop && css`
-// display: ;`}
-// /* Notebook 1280*/
-// ${(props) => props.Notebook && css``}
-// /* Tablet 960*/
-// ${(props) => props.Tablet && css`display:none`}
-// /* Mobile 600*/
-// ${(props) => props.Mobile && css`
-// `}
-
 export const CapitalPageStyle = styled.div`
   * {
     margin: 0;
@@ -147,6 +133,7 @@ export const InfoStyle = styled.div`
     font-size: 35px;
     font-weight: 900;
     margin-bottom: 40px;
+    text-align: justify;
   }
   .SecondText {
     padding: 5% 0 0 7%;
