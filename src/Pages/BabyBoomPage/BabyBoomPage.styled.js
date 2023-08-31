@@ -123,6 +123,7 @@ export const InfoStyle = styled.div`
     font-size: 35px;
     font-weight: 900;
     margin-bottom: 40px;
+    text-align: justify;
   }
   img {
     display: block;
@@ -332,6 +333,7 @@ export const TariffStyle = styled.div`
     color: black;
     font-size: 45px;
     margin: 30px 0;
+    text-align: justify;
   }
   .MainContText {
     font-family: serif;

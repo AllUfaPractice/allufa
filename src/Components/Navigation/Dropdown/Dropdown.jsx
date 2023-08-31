@@ -46,38 +46,36 @@ const ModalButton = () => {
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
-                  АФИША
+                <Link to="/src/Pages/CookingShowPage/CookingShowPage.jsx">
+                  Куленарное шоу вкусно
                 </Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
-                Бегущая строка
+                <Link to="/src/Pages/UfaIsAware/UfaIsAwarePage.jsx">
+                  Уфа в курсе
                 </Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
-                Летняя Уфа
+                <Link to="/src/Pages/SummerUfa/SummerUfaPage.jsx">
+                  Летняя Уфа
                 </Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
-                Прогноз Погоды
+                <Link to="/src/Pages/WeatherPage/WeatherPage.jsx">
+                  Прогноз Погоды
                 </Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/Capital/CapitalPage.jsx">
-                  Столица
-                </Link>
+                <Link to="/src/Pages/Capital/CapitalPage.jsx">Столица</Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
                 <DropdownStyleLinkIcon />
-                <Link to="/src/Pages/BabyBoomPage/BabyBoomPage.jsx">
-                  Телегазета
+                <Link to="/src/Pages/UfaOfChildhood/UfaOfChildhoodPage.jsx">
+                  Уфа-столица детства
                 </Link>
               </DropdownStyleLink>
               <DropdownStyleLink>
